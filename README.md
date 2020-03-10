@@ -1,6 +1,6 @@
-# Cloudflare Workers Documentation
+# Cloudflare API Documentation
 
-This project contains the static website content for the [Cloudflare Workers documentation](https://developers.cloudflare.com/workers/).
+This project contains the static website content for the [Cloudflare API documentation](https://developers.cloudflare.com/api/).
 
 ## Install
 
