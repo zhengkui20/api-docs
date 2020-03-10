@@ -1,7 +1,7 @@
 {
-  "name": "cloudflare-workers-docs",
+  "name": "cloudflare-api-docs",
   "version": "1.0.0",
-  "description": "Cloudflare Workers developer docs",
+  "description": "Cloudflare API developer docs",
   "license": "Apache-2.0 OR MIT",
   "main": "workers-site/index.js",
   "private": true,

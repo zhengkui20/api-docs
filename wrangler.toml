@@ -1,5 +1,5 @@
 account_id = "95e065d2e3f..."
-name = "docs-site-blah"
+name = "docs-site-api"
 type = "webpack"
 workers_dev = false
 webpack_config = "webpack.config.js"
@@ -11,7 +11,7 @@ entry-point = "./workers-site"
 # Production
 [env.production]
 name = "docs-site"
-route = "https://developers.cloudflare.com/workers*"
+route = "https://developers.cloudflare.com/api*"
 zone_id = "351cf9fc66052..."
 account_id = "b54f07a6c269e..."
 
@@ -20,5 +20,5 @@ account_id = "b54f07a6c269e..."
 account_id = "95e06..."
 name = "staging"
 zone_id = "8703d409.."
-route = "https://staging.bigfluffycloudflare.com/workers*"
+route = "https://staging.bigfluffycloudflare.com/api*"
 

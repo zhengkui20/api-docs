@@ -2,11 +2,11 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `Cloudflare Workers`,
-    description: `Use Cloudflare’s APIs and edge network to build secure, ultra-fast applications.`,
-    author: `@cloudflaredev`,
+    title: `Cloudflare API`,
+    description: `Use Cloudflare’s APIs to get the most out of Cloudflare.`,
+    author: `@cloudflare`,
   },
-  assetPrefix: `/workers`,
+  assetPrefix: `/api`,
   // pathPrefix: `/workers`, //  this breaks MDX links like (/reference..) but not the sidebar for some reason if it's inside MDX Render it breaks only
   plugins: [
     `gatsby-plugin-typescript`,
@@ -47,7 +47,7 @@ module.exports = {
             source,
             destination: source.replace(
               path.join(__dirname, './src/content'),
-              'workers'
+              'api'
             ),
           },
         }
