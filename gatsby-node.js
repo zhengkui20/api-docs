@@ -65,7 +65,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: 'pathToServe',
-      value: `/workers${pathToServe}`,
+      value: `/api${pathToServe}`,
     })
     createNodeField({
       node,
