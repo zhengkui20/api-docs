@@ -1,7 +1,9 @@
 ---
-title: Home
+title: Quick Start
 alwaysopen: false
 weight: 1
 ---
 
-Gatsby I am home
+Sections
+    Getting API Access
+    Making API Calls
