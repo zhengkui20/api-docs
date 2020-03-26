@@ -41,7 +41,7 @@ export const SidebarLi: React.FunctionComponent<SidebarLiProps> = ({
   const myChildren: mdx[] = topLevelMarkdown
     .filter(
       edge =>
-        fields.pathToServe === '/workers' + edge.node.fields.parent &&
+        fields.pathToServe === '/api' + edge.node.fields.parent &&
         fields.pathToServe !== edge.node.fields.pathToServe
     )
     .map(child => child.node)
