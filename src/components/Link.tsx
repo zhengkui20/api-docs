@@ -48,7 +48,7 @@ export const Image: React.FC<ImageProps> = ({ children, src, ...props }) => {
 
   if (internal) {
     return (
-      <img src={'/workers' + src} {...props}>
+      <img src={'/api' + src} {...props}>
         {children}
       </img>
     )
