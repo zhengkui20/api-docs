@@ -1,6 +1,6 @@
 ---
 title: Creating API Tokens
-alwaysopen: false
+alwaysopen: true
 weight: 6
 ---
 
