@@ -6,7 +6,7 @@ import { mdx } from '../types/mdx'
 import DocSearch from './DocSearch'
 // import { useMarkdownNodes } from '../hooks/useMarkdownRemark'
 
-const EXCLUDED_PATHS = [/\/workers\/$/] // Paths to not include in the sidebar
+const EXCLUDED_PATHS = [/\/api\/$/] // Paths to not include in the sidebar
 
 const Sidebar = ({ pathToServe = '/' }) => {
   const clickHandler = () => {

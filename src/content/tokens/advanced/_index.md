@@ -1,6 +1,6 @@
 ---
 title: Advanced Usage
-alwaysopen: true
+alwaysopen: false
 weight: 6
 ---
 
