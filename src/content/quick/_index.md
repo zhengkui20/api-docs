@@ -4,20 +4,14 @@ alwaysopen: false
 weight: 1
 ---
 
-Sections
-======
-[Getting Access to the Cloudflar API](#getting-access-to-the-cloudflare-api)
-[Making API Calls](#making-api-calls)
+## Getting Access to the Cloudflare API
 
-
-Getting Access to the Cloudflare API
-======
 When using the Cloudflare API, you need to be able to authenticate yourself so that Cloudflare knows who is making requests and what permissions they have to those resources. You can create an API Token to grant access to the API for you or automated systems that perform actions. See [creating an API Token](link) for more on this.
 
 Legacy Note: Existing customers may be familiar with API Keys. These allow for less granular access and each user can only have one. For these reasons, we advice customers using API Keys to transition to using API Tokens.
 
-Making API Calls
-======
+## Making API Calls
+
 Once you have your API Token created, all API requests are authorized in the same way. Cloudflare uses the [RFC standard](https://tools.ietf.org/html/rfc6750#section-2.1) `Authorization: Bearer <Token>` interface. When used in an example Cloudflare API request it looks like this:
 
 ```curl
