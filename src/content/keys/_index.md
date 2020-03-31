@@ -4,7 +4,7 @@ alwaysopen: false
 weight: 10
 ---
 
-API Keys are the legacy authorization scheme for talking to Cloudflare's APIs. You can find information about using API Keys in the [API schema docs](https://api.cloudflare.com/#getting-started-requests).
+API Keys are the legacy authorization scheme for talking to Cloudflare's APIs.
 
 API Keys have multiple limitations when compared to API Tokens:
 
@@ -17,4 +17,4 @@ API Keys have multiple limitations when compared to API Tokens:
 4. **Lack of advanced limits on usage** - API Tokens can be limited to use in specific time windows and expire or be limited to use from specific IP ranges.
 
 
-For these reasons, API Keys are not recommended for new customers. Current customers using API Keys are encouraged to migrate and use API Tokens instead.
+For these reasons, API Keys are not recommended for new customers. Current customers using API Keys are encouraged to migrate and use API Tokens instead. You can find information about using API Keys in the [API schema docs](https://api.cloudflare.com/#getting-started-requests).
