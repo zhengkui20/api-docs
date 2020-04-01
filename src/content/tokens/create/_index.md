@@ -4,14 +4,12 @@ alwaysopen: true
 weight: 1
 ---
 
-# Sections
+* [Getting Started](#getting-started)
+* [Customizing the Token](#customizing-the-token)
+* [Verifying Your Selection](#verifying-your-selection)
+* [Generating the Token](#generating-the-token)
 
-* Getting Started - Selecting a Template or Going Custom
-* Customizing the Token
-* Verifying Your Selection
-* Generating the Token
-
-# Getting Started - Selecting a Template or Going Custom 
+## Getting Started
 
 To get started creating an API Token, log into the [Cloudflare Dashboard](https://dash.cloudflare.com) and go to `User Profile` -> `API Tokens` or simply [click here](https://dash.cloudflare.com/profile/api-tokens). From the API Token home screen select `Create Token`.
 
@@ -19,7 +17,7 @@ If you are new to API Tokens or the Cloudflare API, Templates are the quickest w
 
 ![Template selection][template_select]
 
-# Customizing the Token
+## Customizing the Token
 
 For this example, the `Edit Zone DNS` template has been selected. After selecting, you are presented with a view of the currently selected permissions. There are 3 required inputs to creating a Token:
 
@@ -33,11 +31,11 @@ There are two additional inputs that can be used to restrict how a token is used
 
 Because a template was selected, both the name and the permissions have been pre-selected. In the case of a custom token, both of inputs one and two would need to be filled in. the only required selection is which zones the token should belong to. Let's cover each of these sections.
 
-## Token Name
+### Token Name
 
 This can be anything text and should be informative of why or how the token is being used as a reference.
 
-## Token Permissions
+### Token Permissions
 
 Permissions are segmented into three categories based on resource:
 
@@ -50,13 +48,13 @@ Each category contains Permission Groups related to those resources. DNS permiss
 After selecting a Permission Group, you can choose what level of access to grant the token. Most groups offer `Edit` or `Read` options. `Edit` is full _CRUDL_ (_create_, _read_, _update_, _delete_, _list_) access, while `Read` is just the _read_ permission and _list_ where appropriate.
 
 
-## Token Resources
+### Token Resources
 
 The resources selected will be the only ones that the token will be able to perform the authorized actions against. For example granting `Zone DNS Read` access to a zone `example.com` will allow the token to read DNS records for only that specific zone. Any other zone will return an error for DNS record reads operations. Any other operation on that zone will also return an error.
 
 As permissions are selected in resource categories, options for selecting the appropriate resources will appear. Note that for user permissions, there is no necessary selection as the token will operate on the user creating the token.
 
-### Zone Resources
+#### Zone Resources
 
 When creating tokens with access to zone resources there are multiple ways to define the access. The options available are:
 
@@ -70,7 +68,7 @@ For this example, we go with option 1 and select the zone `theburritobot.com`.
 
 ![Zone Selection][zone_selection]
 
-### Account Resources
+#### Account Resources
 
 Account resources are similar to zone resources but with 1 less option:
 
@@ -79,7 +77,7 @@ Account resources are similar to zone resources but with 1 less option:
 
 Once you have selected the appropriate permissions and resources, select `Continue to Summary` to review the token before creating. 
 
-# Verifying Your Selection
+## Verifying Your Selection
 
 The token summary screen allows you to see all the resources and permissions the token will have before creating the token and seeing the token's secret.
 
@@ -89,7 +87,7 @@ If there are any issues you can go back and make adjustments. Even if after crea
 
 Once you have verified the token is as desired, select `Create Token` to proceed to generating the Token's secret.
 
-# Generating the Token
+## Generating the Token
 
 Once successfully generated, the token secret is only shown once. Make sure to copy the secret to a secure place. 
 
