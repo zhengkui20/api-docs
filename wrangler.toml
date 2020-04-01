@@ -17,8 +17,8 @@ account_id = "b54f07a6c269ecca2fa60f1ae4920c99"
 
 # Staging
 [env.staging]
-account_id = "95e06..."
+account_id = "95e065d2e3f97a1e50bae58aea71df6d"
 name = "staging"
-zone_id = "8703d409.."
+zone_id = "8703d409e5c1c580aeee02b98f9fd448"
 route = "https://staging.bigfluffycloudflare.com/api*"
 
