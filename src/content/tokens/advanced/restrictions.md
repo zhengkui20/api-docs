@@ -1,5 +1,5 @@
 ---
-title: Restricting the use of Tokens
+title: Restricting Token Use
 weight: 5
 ---
 
