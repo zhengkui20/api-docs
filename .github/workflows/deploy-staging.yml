@@ -20,7 +20,7 @@ jobs:
     - name: Build docs
       run: npm run build
     - name: Publish
-      uses: signalnerve/wrangler-action@1.0.0
+      uses: cloudflare/wrangler-action@1.1.0
       with:
-        token: ${{ secrets.TOKEN }}
+        apiToken: ${{ secrets.TOKEN }}
         environment: "staging"
