@@ -73,4 +73,3 @@ Releasing done through CI for whatever is on master. Ask Ashley Williams or Kris
 This repo is overseen by the Cloudflare API Team with thanks to the Workers Developer Experience team for providing the ability to make these docs public and deployed via workers. Check out our contribution guide at [CONTRIBUTING.md](/CONTRIBUTING.md)!
 
 To read about converting an existing static site generator to this repo with workers sites see: [./Hugo-gatsby.md] 
-
