@@ -157,7 +157,3 @@ curl -X POST "https://api.cloudflare.com/client/v4/user/tokens" \
   }
 }'
 ```
-
-## An example
-
-Let us use the example of providing a central automated auth service that generates scoped tokens for use by other services. In this case, each service only needs access to a single zone to perform an DNS record update for a few operations, so we will also limit how long each generated token is available for.
