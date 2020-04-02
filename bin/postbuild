@@ -1,6 +1,6 @@
-echo "Moving things into public/workers"
-mv -f public/workers/* public
-rm -rf public/workers
-mv public workers
+echo "Moving things into public/api"
+mv -f public/api/* public
+rm -rf public/api
+mv public api
 mkdir public
-mv workers public
+mv api public
