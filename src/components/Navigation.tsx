@@ -10,7 +10,7 @@ export const Navigation = () => {
         const isActiveSubNavTab = (path: string) => {
           return location.pathname === path || location.pathname.indexOf(path) === 0
         }
-        const isActiveRootTab = () => location.pathname === '/workers/'
+        const isActiveRootTab = () => location.pathname === '/api/'
         return (
           <div className="navigation">
             <a href="https://workers.cloudflare.com">

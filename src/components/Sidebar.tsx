@@ -66,7 +66,7 @@ const Sidebar = ({ pathToServe = '/' }) => {
               </a>
             </li>
             {topLevelMarkdown
-              // get top level (i.e. relURLs with /workers followed by no more than
+              // get top level (i.e. relURLs with /api followed by no more than
               // one forward slash) mdx nodes
               .filter(edge => edge.node.fields.parent === '/')
               .filter(edge => !edge.node.frontmatter.hidden)

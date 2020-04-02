@@ -10,7 +10,7 @@ type LinkProps = {
 }
 // replace anything with /workers or / prepended to just /workers
 const stripWokrers = (url: string) =>
-  url.replace(/^(\/workers){1,3}/, '').replace(/^\/(?!\/)/, '/workers/')
+  url.replace(/^(\/api){1,3}/, '').replace(/^\/(?!\/)/, '/api/')
 
 export const Src = (src: string) => {
   // export const Src: React.FC<LinkProps> = ({ children, to, ...other }) => {
