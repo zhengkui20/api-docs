@@ -8,7 +8,7 @@ type LinkProps = {
   to: string
   [x: string]: any // To improve types, might want to inherit from  GatsbyLinkProps<TState> instead
 }
-// replace anything with /workers or / prepended to just /workers
+// replace anything with /api or / prepended to just /api
 const stripWokrers = (url: string) =>
   url.replace(/^(\/api){1,3}/, '').replace(/^\/(?!\/)/, '/api/')
 
