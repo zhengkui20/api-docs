@@ -159,18 +159,15 @@ export const Navigation = () => {
               </div>
             </a>
             <Link
-              to="/workers/"
+              to="https://developers.cloudflare.com"
+            >
+              <span>Developers</span>
+            </Link>
+            <Link
+              to="/api/"
               className={'navigation-link' + (isActiveRootTab() ? ' active' : '')}
             >
               <span>Docs</span>
-            </Link>
-            <Link
-              to="/workers/quickstart/"
-              className={
-                'navigation-link' + (isActiveSubNavTab('/workers/quickstart/') ? ' active' : '')
-              }
-            >
-              <span>Quick&nbsp;Start</span>
             </Link>
             <Link
               to="/workers/templates/"
