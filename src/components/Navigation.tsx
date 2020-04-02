@@ -19,7 +19,7 @@ export const Navigation = () => {
             <a href="https://cloudflare.com">
               <div className="logo">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   viewBox="0 50 1074.3 293.7"  xmlSpace="preserve">
+                   viewBox="0 50 1074.3 293.7"  transform="scale(1.15)" xmlSpace="preserve">
                 <style type="text/css">
                   {`.st0{fill:#404041;}`}
                   {`.st1{fill:#FFFFFF;}`}
