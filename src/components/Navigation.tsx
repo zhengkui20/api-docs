@@ -10,7 +10,7 @@ export const Navigation = () => {
         const isActiveSubNavTab = (path: string) => {
           return location.pathname === path || location.pathname.indexOf(path) === 0
         }
-        const isActiveRootTab = () => location.pathname === '/workers/'
+        const isActiveRootTab = () => location.pathname === '/api/'
         return (
           <div className="navigation">
             <a href="https://workers.cloudflare.com">
@@ -159,18 +159,15 @@ export const Navigation = () => {
               </div>
             </a>
             <Link
-              to="/workers/"
+              to="https://developers.cloudflare.com"
+            >
+              <span>Developers</span>
+            </Link>
+            <Link
+              to="/api/"
               className={'navigation-link' + (isActiveRootTab() ? ' active' : '')}
             >
               <span>Docs</span>
-            </Link>
-            <Link
-              to="/workers/quickstart/"
-              className={
-                'navigation-link' + (isActiveSubNavTab('/workers/quickstart/') ? ' active' : '')
-              }
-            >
-              <span>Quick&nbsp;Start</span>
             </Link>
             <Link
               to="/workers/templates/"

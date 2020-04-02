@@ -22,5 +22,5 @@ jobs:
     - name: Publish
       uses: cloudflare/wrangler-action@1.1.0
       with:
-        apiToken: ${{ secrets.TOKEN }}
+        apiToken: ${{ secrets.CF_STAGING_TOKEN }}
         environment: "staging"
