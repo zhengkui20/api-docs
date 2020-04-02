@@ -20,5 +20,12 @@ account_id = "b54f07a6c269ecca2fa60f1ae4920c99"
 account_id = "95e065d2e3f97a1e50bae58aea71df6d"
 name = "api-docs-staging"
 zone_id = "8703d409e5c1c580aeee02b98f9fd448"
+route = "https://staging.bigfluffycloudflare.com/api*"
+
+# Dev
+[env.dev]
+account_id = "95e065d2e3f97a1e50bae58aea71df6d"
+name = "api-docs-dev"
+zone_id = "8703d409e5c1c580aeee02b98f9fd448"
 route = "https://api.bigfluffycloudflare.com/api*"
 
