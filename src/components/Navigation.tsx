@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Location } from '@reach/router'
 
+/**
+* TODO: Fix the nav here to match regular dev docs
+*/
 export const Navigation = () => {
   console.log('location rendered')
   return (
