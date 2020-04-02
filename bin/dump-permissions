@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+TARGET=$(dirname "$0")/../src/content/tokens/create/permissions.md
+
+read -p "Enter API Tokens for fetching permission groups: "  TOKEN
+
+JSON=$(curl -s "https://api.cloudflare.com/client/v4/user/tokens/permission_groups" \
+  -H "Authorization: Bearer $TOKEN" \
+  | jq -r '.result[] | "|\(.name)|\(.id)|\(.description)|\(.scopes[0])|"' \
+  | sort)
+
+# Output user permission groups
+cat <<EOT >> $TARGET
+
+**User Permissions**
+
+|Name|ID|Description|Applicable Scope|
+|---|---|---|---|
+EOT
+grep "com.cloudflare.api.user" <<< "$JSON" >> $TARGET
+
+# Output account permission groups
+cat <<EOT >> $TARGET
+
+**Account Permissions**
+
+|Name|ID|Description|Applicable Scope|
+|---|---|---|---|
+EOT
+grep "com.cloudflare.api.account" <<< "$JSON" >> $TARGET
+
+# Output zone permission groups
+cat <<EOT >> $TARGET
+
+**Zone Permissions**
+
+|Name|ID|Description|Applicable Scope|
+|---|---|---|---|
+EOT
+grep "com.cloudflare.api.account.zone" <<< "$JSON" >> $TARGET
