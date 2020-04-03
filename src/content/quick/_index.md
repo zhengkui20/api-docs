@@ -20,4 +20,4 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/cd7d0123e3012345da9420df
 -H "Authorization: Bearer YQSn-xWAQiiEh9qM58wZNnyQS7FUdoqGIUAbrh7T"
 ```
 
-For spcificing guidance on making API calls, see our [API schema docs](https://api.cloudflare.com) or the appropriate [Developer Docs section](https://developers.cloudflare.com) for that service. Additionally, if you are using [golang](https://github.com/cloudflare/cloudflare-go) or [Hashicorp's Terraform](https://github.com/terraform-providers/terraform-provider-cloudflare) you can leverage our 1st party libraries to integrate with Cloudflare's API.
+For specifying guidance on making API calls, see our [API schema docs](https://api.cloudflare.com) or the appropriate [Developer Docs section](https://developers.cloudflare.com) for that service. Additionally, if you are using [golang](https://github.com/cloudflare/cloudflare-go) or [Hashicorp's Terraform](https://github.com/terraform-providers/terraform-provider-cloudflare) you can leverage our 1st party libraries to integrate with Cloudflare's API.

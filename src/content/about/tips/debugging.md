@@ -68,7 +68,7 @@ A common quick hack to get some debug information out of your Worker is to retur
 
 A Worker can make HTTP requests to any site on the public internet. Many projects already have a service like [Sentry](https://sentry.io/) set up to collect error logs from browser-side JavaScript. You can use the same service to collect errors from your Worker, by making an HTTP request to the service to report the error. Refer to your service's API documentation for details on what kind of request to make.
 
-When logging using this strategy, you must account for the fact that outstanding asynchronous tasks are canceled as soon as a Worker finishes sending its main response body to the client. In order to ensure that a logging subrequest completes, you can pass its `fetch()` promise to [`event.waitUntil()`](https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil). For example:
+When logging using this strategy, you must account for the fact that outstanding asynchronous tasks are cancelled as soon as a Worker finishes sending its main response body to the client. In order to ensure that a logging subrequest completes, you can pass its `fetch()` promise to [`event.waitUntil()`](https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil). For example:
 
 ```javascript
    ...

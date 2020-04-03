@@ -20,7 +20,7 @@ Once an API Token is created that can create other tokens, the next step is usin
 Creating a Token requires defining two sections of config and then sending the API request.
 
 1. Define the policy
-2. Define the restirctions
+2. Define the restrictions
 3. Create the token
 
 ### Define the Policy
