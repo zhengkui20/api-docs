@@ -78,7 +78,7 @@ A **single account** or **all accounts** can be included in a token policy.
 A **single zone**, **all zones in an account**, or **all zones in all accounts** can be included in a token policy:
 
 * A **single zone** is denoted as:`"com.cloudflare.api.account.zone.<zone_tag>": "*"`
-* **All Zones in an account** are denoted as:`c"om.cloudflare.api.account.<account_tag>": {"com.cloudflare.api.account.zone.*": "*"}`
+* **All Zones in an account** are denoted as:`"com.cloudflare.api.account.<account_tag>": {"com.cloudflare.api.account.zone.*": "*"}`
 * **All zones in all accounts** is denoted as:`"com.cloudflare.api.account.zone.*": "*"`
 
 ##### User
