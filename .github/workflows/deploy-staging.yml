@@ -1,7 +1,7 @@
 name: Deploy staging site
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
@@ -26,3 +26,23 @@ jobs:
         apiToken: ${{ secrets.CF_STAGING_TOKEN }}
         environment: 'staging'
         workingDirectory: 'api-docs'
+  deploy_bgp_prefixes_docs:
+    runs-on: ubuntu-latest
+    name: Deploy staging bgp-prefixes docs
+    steps:
+    - uses: actions/checkout@v1
+    - name: Navigate to repo
+      run: cd $GITHUB_WORKSPACE
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install deps
+      run: 'yarn'
+    - name: Build docs
+      run: 'yarn workspace cloudflare-bgp-prefixes-docs run build'
+    - name: Publish
+      uses: cloudflare/wrangler-action@1.1.0
+      with:
+        apiToken: ${{ secrets.CF_STAGING_TOKEN }}
+        environment: 'staging'
+        workingDirectory: 'bgp-prefixes-docs'

@@ -1,14 +1,14 @@
-name: Deploy production site
+name: Deploy dev site
 
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   deploy_api_docs:
     runs-on: ubuntu-latest
-    name: Deploy production API docs
+    name: Deploy dev API docs
     steps:
     - uses: actions/checkout@v1
     - name: Navigate to repo
@@ -23,12 +23,12 @@ jobs:
     - name: Publish
       uses: cloudflare/wrangler-action@1.1.0
       with:
-        apiToken: ${{ secrets.CF_TOKEN }}
-        environment: 'production'
+        apiToken: ${{ secrets.CF_STAGING_TOKEN }}
+        environment: 'dev'
         workingDirectory: 'api-docs'
-  deploy_bgp-prefixes_docs:
+  deploy_bgp_prefixes_docs:
     runs-on: ubuntu-latest
-    name: Deploy production bgp-prefixes docs
+    name: Deploy dev bgp-prefixes docs
     steps:
     - uses: actions/checkout@v1
     - name: Navigate to repo
@@ -43,7 +43,6 @@ jobs:
     - name: Publish
       uses: cloudflare/wrangler-action@1.1.0
       with:
-        apiToken: ${{ secrets.CF_TOKEN }}
-        environment: 'production'
+        apiToken: ${{ secrets.CF_STAGING_TOKEN }}
+        environment: 'dev'
         workingDirectory: 'bgp-prefixes-docs'
-  

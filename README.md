@@ -1,12 +1,20 @@
 # Cloudflare API Documentation
 
-This project contains the static website content for the [Cloudflare API documentation](https://developers.cloudflare.com/api/).
+This project contains the static website content for the [Cloudflare API documentation](https://developers.cloudflare.com/api/) and [Cloudflare BGP Prefixes](https://developers.cloudflare.com/bgp-prefixes/).
 
 ## Install
 
 Ensure you have the the following installed:
 
 - [node](https://nodejs.org/en/download/) version 9
+
+## Select project
+
+Select the project you want to test and `cd` into it
+
+```
+cd api-docs
+```
 
 ## Preview
 
