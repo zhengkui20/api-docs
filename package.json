@@ -1,0 +1,11 @@
+{
+    "name": "cloudflare-docs-site",
+    "private": true,
+    "version": "1.0.0",
+    "main": "index.js",
+    "workspaces": [
+      "bgp-prefixes-docs",
+      "api-docs"
+    ]
+  }
+  

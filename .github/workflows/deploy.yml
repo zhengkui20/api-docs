@@ -6,8 +6,9 @@ on:
       - master
 
 jobs:
-  build:
+  deploy_api_docs:
     runs-on: ubuntu-latest
+    name: Deploy production API docs
     steps:
     - uses: actions/checkout@v1
     - name: Navigate to repo
@@ -16,11 +17,12 @@ jobs:
       with:
         node-version: '10.x'
     - name: Install deps
-      run: npm install
+      run: 'yarn'
     - name: Build docs
-      run: npm run build
+      run: 'yarn workspace cloudflare-api-docs run build'
     - name: Publish
       uses: cloudflare/wrangler-action@1.1.0
       with:
         apiToken: ${{ secrets.CF_TOKEN }}
-        environment: "production"
+        environment: 'production'
+        workingDirectory: 'api-docs'
