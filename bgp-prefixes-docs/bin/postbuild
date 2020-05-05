@@ -1,0 +1,6 @@
+echo "Moving things into public/bgp-prefixes"
+mv -f public/bgp-prefixes/* public
+rm -rf public/bgp-prefixes
+mv public bgp-prefixes
+mkdir public
+mv bgp-prefixes public
