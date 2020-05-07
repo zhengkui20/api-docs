@@ -1,9 +1,12 @@
 name: Deploy staging site
 
 on:
-  push:
+  pull_request:
     branches:
       - master
+  push:
+    branches:
+      - staging
 
 jobs:
   deploy_api_docs:
