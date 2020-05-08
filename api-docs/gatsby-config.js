@@ -8,7 +8,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `@victoriabernard92/docs-theme`,
+      resolve: `gatsby-theme-cloudflare-docs`,
       options: {
         publicPath: 'api',
         contentPath: './src/content/',

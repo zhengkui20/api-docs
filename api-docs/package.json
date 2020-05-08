@@ -18,12 +18,11 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "dependencies": {
-    "@victoriabernard92/docs-theme": "^0.0.1",
-    "gatsby": "^2.15.29",
+    "gatsby": "^2.20.9",
+    "gatsby-theme-cloudflare-docs": "^0.0.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1"
-
   },
   "ava": {
     "require": [
