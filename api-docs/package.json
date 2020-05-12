@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "gatsby": "^2.20.9",
-    "gatsby-theme-cloudflare-docs": "^0.0.3",
+    "gatsby-theme-cloudflare-docs": "^0.0.5",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1"
