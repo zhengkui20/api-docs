@@ -15,7 +15,7 @@ Limiting the use of the token via IP filtering or TTL is also recommended to red
 
 ## Creating API Tokens with the API
 
-Once an API Token is created that can create other tokens, the next step is using it in the API. The complete API schema docs for these operations are [available here](link), but below is a walkthrough of the process to create a token with the API.
+Once an API Token is created that can create other tokens, the next step is using it in the API. The complete API schema docs for these operations are [available here](https://api.cloudflare.com/#user-api-tokens-properties), but below is a walkthrough of the process to create a token with the API.
 
 Creating a Token requires defining two sections of config and then sending the API request.
 
